@@ -1,0 +1,10 @@
+.separador {
+	background-color: var(--faded-gray);
+	height: 2px;
+	max-width: 30px;
+	margin: 15px auto 20px;
+}
+
+%transicion {
+	transition: all ease 0.3s;
+}

@@ -1,0 +1,79 @@
+@use "../util" as *;
+
+.footer {
+	&__redes-wrapper {
+		display: flex;
+		justify-content: center;
+		gap: 40px;
+		flex-wrap: wrap;
+		max-width: 600px;
+		margin: 45px auto;
+
+		li {
+			@extend %transicion;
+			display: inline-block;
+
+			&:hover {
+				color: var(--gray);
+			}
+		}
+	}
+
+	&__link {
+		text-transform: uppercase;
+		font-family: var(--title-font);
+		font-size: rem(14);
+		// display: flex;
+		// align-items: center;
+	}
+
+	// &__icon {
+	// 	margin-right: 10px;
+	// 	width: 15px;
+	// 	height: 15px;
+	// }
+
+	.fab {
+		margin-right: 8px;
+	}
+
+	&__texto {
+		color: var(--light-gray);
+		text-align: center;
+	}
+}
+
+.gallery {
+	&__grid {
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+	}
+
+	&__photo {
+		position: relative;
+		display: inline-block;
+	}
+
+	&__fade {
+		@extend %transicion;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: var(--dark-fade);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		opacity: 0;
+		&:hover {
+			opacity: 1;
+		}
+	}
+
+	&__icon {
+		color: #fff;
+		width: 50px;
+		height: 50px;
+	}
+}
