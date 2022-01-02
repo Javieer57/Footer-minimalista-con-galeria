@@ -17,7 +17,7 @@ $(document).ready(function () {
 				items: 4,
 			},
 			1300: {
-				items: 5,
+				items: 6,
 			},
 		},
 	});
